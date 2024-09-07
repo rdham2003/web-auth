@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Auth Request</title>
+    <link rel="stylesheet" href="static/auth.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div id="auth_container">
+        <form action="/twofactor" method="POST">
+            <label>Two factor required. Code sent to Email</label>
+            <br>
+            <input type="text" name="twofactor">
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

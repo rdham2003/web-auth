@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Auth Request</title>
+    <link rel="stylesheet" href="static/auth.css">
+    <script src="auth.js"></script>
+</head>
+<body>
+    <div id="auth_container">
+        <form action="/auth" method="POST">
+            <label>Enter 6-digit passkey</label>
+            <br>
+            <input placeholder="123456" type="text" name="userauth" id="userauth" required>
+            <br>
+            <button id="authsub">Submit</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <form action="/req" method="POST">
+            <label for="">Request for Authentication</label>
+            <br>
+            <input placeholder="johnappleseed@gmail.com" type="text" name="authreq" id="authreq" required>
+            <br>
+            <button id="reqauth">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

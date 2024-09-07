@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console</title>
+</head>
+<body>
+    <h1>Requests</h1>
+    {% if requests %}
+        <h2>All Requested Users</h2>
+        <ul>
+            {% for request in requests %}
+            <li name="reqEmail">{{ request }}</li>
+            <form action="/allow" method="POST">
+                <input type="hidden" name="reqEmail" value="{{ request }}">
+                <button>Allow</button>
+            </form>
+            <form action="/decline" method="POST">
+                <input type="hidden" name="reqEmail" value="{{ request }}">
+                <button>Decline</button>
+            </form>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h2>No Requests Found</h2>
+    {% endif %}
+</body>
+</html>

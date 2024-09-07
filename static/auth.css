@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(21, 21, 66);
+    margin: 0;
+}
+
+#auth_container{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border: 2px black solid;
+    height: 160px;
+    width: 200px;
+    padding: 20px;
+    margin: auto;
+}
+
+#denied{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 57, 57);
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
