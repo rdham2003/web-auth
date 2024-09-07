@@ -18,7 +18,7 @@ def return_key():
 
 def send_email(subject, body):
     sender_email = "twofactfactor@gmail.com"
-    receiver_email = "deshdeepak@yahoo.com"
+    receiver_email = "mpstechdesh@outlook.com"
     password = "gvhr hoxe ugcn gxcj"
 
     server = smtplib.SMTP("smtp.gmail.com", 587)
